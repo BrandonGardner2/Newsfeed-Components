@@ -125,12 +125,12 @@
 }
 .article-open {
   height: 400px;
-  animation: open 1s;
+  animation: openArticle 1s;
 }
 .article-closing {
-  animation: close 1s;
+  animation: closeArticle 1s;
 }
-@keyframes open {
+@keyframes openArticle {
   0% {
     height: 50px;
   }
@@ -138,7 +138,7 @@
     height: 400px;
   }
 }
-@keyframes close {
+@keyframes closeArticle {
   0% {
     height: 400px;
   }
