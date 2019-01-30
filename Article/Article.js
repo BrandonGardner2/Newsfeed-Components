@@ -20,6 +20,12 @@ class Article {
     } else {
       this.expandButton.textContent = "Expand";
     }
+    if (!this.domElement.classList.contains("article-open")) {
+      this.domElement.classList.add("article-closing");
+      setTimeout(() => {
+        this.domElement.classList.remove("article-closing");
+      }, 1000);
+    }
   }
 }
 

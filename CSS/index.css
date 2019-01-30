@@ -125,6 +125,26 @@
 }
 .article-open {
   height: 400px;
+  animation: open 1s;
+}
+.article-closing {
+  animation: close 1s;
+}
+@keyframes open {
+  0% {
+    height: 50px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+@keyframes close {
+  0% {
+    height: 400px;
+  }
+  100% {
+    height: 50px;
+  }
 }
 html,
 body {
