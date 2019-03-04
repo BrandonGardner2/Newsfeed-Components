@@ -43,4 +43,29 @@
 
 .article-open {
   height: 400px;
+  animation: openArticle 1s;
+}
+
+.article-closing {
+  animation: closeArticle 1s;
+}
+
+@keyframes openArticle {
+  0% {
+    height: 50px;
+  }
+
+  100% {
+    height: 400px;
+  }
+}
+
+@keyframes closeArticle {
+  0% {
+    height: 400px;
+  }
+
+  100% {
+    height: 50px;
+  }
 }
